@@ -53,7 +53,7 @@ section {
   gap: 20px;
 }
 .rgbColor {
-  color: white;
+  color: black;
   font-size: 40px;
 }
 .rgb-container {
@@ -61,7 +61,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgb(115, 255, 0);
+  background-color: rgb(255, 255, 255);
   min-height: 100vh;
 }
 
