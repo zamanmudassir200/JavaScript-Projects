@@ -17,7 +17,8 @@ section {
 }
 .hex-content,
 .hex-btn,
-.copy-btn {
+.copy-hex-btn,
+.copy-rgb-btn {
   padding: 10px 20px;
   border-radius: 10px;
   outline: none;
@@ -32,7 +33,8 @@ section {
   font-weight: bolder;
 }
 .hex-content .hex-btn:hover,
-.copy-btn:hover {
+.copy-hex-btn:hover,
+.copy-rgb-btn:hover {
   background: green;
   color: white;
   transition: all 0.3s ease-in-out;

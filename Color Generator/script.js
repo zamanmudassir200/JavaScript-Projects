@@ -15,6 +15,12 @@ hexBtn.addEventListener("click", () => {
   printhexColor.innerHTML = `${finalHexColor}`;
   hexContainer.style.background = `${finalHexColor}`;
 });
+const copyHexBtn = document.querySelector(".copy-hex-btn");
+
+copyHexBtn.addEventListener("click", () => {
+  navigator.clipboard.writeText(printhexColor.textContent);
+  alert(`Hex color is copied to clipboard --- ${printhexColor.textContent}`);
+});
 
 const rgbBtn = document.querySelector(".rgb-btn");
 const redInput = document.querySelector(".red-input");
@@ -30,7 +36,14 @@ rgbBtn.addEventListener("click", () => {
   const rgbContainer = document.querySelector(".rgb-container");
   const rgbColor = document.querySelector(".rgbColor");
 
-  rgbColor.textContent = `rgb(${extractedRedValue},${extractedGreenValue},${extractedBlueValue})`;
+  rgbColor.innerHTML = `rgb(${extractedRedValue},${extractedGreenValue},${extractedBlueValue})`;
 
   rgbContainer.style.background = `rgb(${extractedRedValue},${extractedGreenValue},${extractedBlueValue})`;
+});
+const copyRgbBtn = document.querySelector(".copy-rgb-btn");
+const rgbColor = document.querySelector(".rgbColor");
+
+copyRgbBtn.addEventListener("click", () => {
+  navigator.clipboard.writeText(rgbColor.textContent);
+  alert(`Rgb color is copied to clipboard ---${rgbColor.textContent}`);
 });
