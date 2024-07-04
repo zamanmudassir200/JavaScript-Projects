@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+main {
+  background-color: black;
+  min-height: 100vh;
+  color: white;
+}
+.accordion-container {
+  max-width: 1200px;
+  margin: 0px auto;
+  background-color: white;
+  color: black;
+  min-height: 100vh;
+  padding: 0 10px;
+}
+
+.accordion-heading {
+  text-align: center;
+  padding: 26px 0;
+}
+
+.accordion {
+  color: white;
+  background-color: blue;
+  max-width: 800px;
+  margin: 0 auto;
+  min-height: 600px;
+  border-radius: 10px;
+  padding: 13px 20px;
+}
+.accordion-question {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  border-bottom: 1px solid white;
+}
+.accordion-question div {
+  font-size: 40px;
+}
+
+.accordion-item {
+  margin: 20px 0;
+}
+.accordion-answer {
+  background-color: white;
+  padding: 14px 20px;
+  color: black;
+  font-size: 20px;
+  text-align: justify;
+  /* display: none; */
+}
+/* .active {
+  background-color: blue;
+} */
+.accordion-question-icon {
+  cursor: pointer;
+}
+.accordion-question-icon.active .accordion-answer {
+  display: block;
+  padding: 40px 0;
+}
+
+/* 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #7cf9e5;
+}
+
+.section {
+  min-height: 100vh;
+  padding-top: 100px;
+}
+
+.container {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+h1 {
+  font-size: 40px;
+  margin-bottom: 50px;
+  color: rgb(52, 63, 2);
+  text-align: center;
+}
+
+.accordion {
+  max-width: 700px;
+  margin: auto;
+}
+
+.accordion_item {
+  border: 1px solid rgb(255, 0, 85);
+  padding: 20px;
+}
+
+.accordion_title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 30px;
+}
+
+.accordion_title h3 {
+  flex: 1;
+  font-size: 25px;
+}
+
+.accordion_title i {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.accordion_content {
+  display: none;
+}
+
+.accordion_title.active + .accordion_content {
+  display: block;
+  padding-top: 20px;
+}
+
+.accordion_content p {
+  font-size: 20px;
+  color: rgb(117, 49, 0);
+}
+
+.accordion_title.active i {
+  transform: rotate(180deg);
+}
+
+.accordion_title.active {
+  border-bottom: 2px solid red;
+} */
