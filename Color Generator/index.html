@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <div class="hex-container">
+        <div class="hex-content">
+          <div class="">
+            <h1>HEX COLOR GENERATOR</h1>
+          </div>
+          <h1 class="hex-color">#000000</h1>
+          <div class="hex-btns">
+            <button class="hex-btn">Generate Hex Color</button>
+
+            <button class="copy-btn">Copy to Clipboard</button>
+          </div>
+        </div>
+      </div>
+      <div class="rgb-container">
+        <div class="rgb-content">
+          <label for="r">Red (R)</label>
+          <input class="red-input" type="range" min="0" max="255" />
+          <label for="r">Green (G)</label>
+          <input class="green-input" type="range" min="0" max="255" />
+          <label for="r">Blue (B)</label>
+          <input class="blue-input" type="range" min="0" max="255" />
+          <button class="copy-btn">Copy to Clipboard</button>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
