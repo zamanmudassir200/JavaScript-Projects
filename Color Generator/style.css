@@ -44,10 +44,15 @@ section {
   text-align: center;
   color: white;
 }
-.hex-btns {
+.hex-btns,
+.rgb-btns {
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+.rgbColor {
+  color: white;
+  font-size: 40px;
 }
 .rgb-container {
   flex: 1;

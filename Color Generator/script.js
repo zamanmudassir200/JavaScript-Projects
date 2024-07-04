@@ -16,19 +16,21 @@ hexBtn.addEventListener("click", () => {
   hexContainer.style.background = `${finalHexColor}`;
 });
 
+const rgbBtn = document.querySelector(".rgb-btn");
 const redInput = document.querySelector(".red-input");
 const greenInput = document.querySelector(".green-input");
 const blueInput = document.querySelector(".blue-input");
 
-redInput.addEventListener("change", (e) => {
-  redInputValue = e.target.value;
-  console.log(redInputValue);
-});
-greenInput.addEventListener("change", (e) => {
-  var greenInputValue = e.target.value;
-  console.log(greenInputValue);
-});
-blueInput.addEventListener("change", (e) => {
-  var blueInputValue = e.target.value;
-  console.log(blueInputValue);
+rgbBtn.addEventListener("click", () => {
+  const extractedRedValue = redInput.value;
+  const extractedGreenValue = greenInput.value;
+  const extractedBlueValue = blueInput.value;
+  console.log(extractedRedValue, extractedGreenValue, extractedBlueValue);
+
+  const rgbContainer = document.querySelector(".rgb-container");
+  const rgbColor = document.querySelector(".rgbColor");
+
+  rgbColor.textContent = `rgb(${extractedRedValue},${extractedGreenValue},${extractedBlueValue})`;
+
+  rgbContainer.style.background = `rgb(${extractedRedValue},${extractedGreenValue},${extractedBlueValue})`;
 });
