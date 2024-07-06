@@ -73,6 +73,7 @@ const helperMethod = (method, url) => {
 const fetchApiUsingAsyncAwaitMethod = async (apiUrl) => {
   const response = await helperMethod("GET", apiUrl);
   console.log(response);
+  displayPost(response);
 };
 fetchApiUsingAsyncAwaitMethod(apiUrl);
 
