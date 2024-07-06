@@ -1,22 +1,46 @@
 const api = "https://jsonplaceholder.typicode.com/todos/";
-const apiUrl = "https://jsonplaceholder.typicode.com/posts/";
+const apiUrl = "https://jsonplaceholder.typicode.com/posts";
 const postListContainer = document.querySelector(".post-list-container");
 
 /// fetch api using XHR -- XMLHTTPREQUEST
-const fetchApiUsingXHR = (apiUrl) => {
-  let xhr = new XMLHttpRequest();
+// const fetchApiUsingXHR = (apiUrl) => {
+//   let xhr = new XMLHttpRequest();
 
-  xhr.open("GET", apiUrl);
-  xhr.responseType = "json";
-  xhr.send();
-  xhr.onload = () => {
-    if (xhr.status === 200) {
-      console.log(xhr.response);
-      displayPost(xhr.response);
-    } else {
-      console.log("Some error occured");
-    }
-  };
+//   xhr.open("GET", apiUrl);
+//   xhr.responseType = "json";
+//   xhr.send();
+//   xhr.onload = () => {
+//     if (xhr.status === 200) {
+//       console.log(xhr.response);
+//       displayPost(xhr.response);
+//     } else {
+//       console.log("Some error occured");
+//     }
+//   };
+// };
+// const fetchApiUsingFetchMethod = (apiUrl) => {
+//   const fetchRequest = fetch(apiUrl, {
+//     method: "GET",
+//   });
+//   fetchRequest
+//     .then((response) => response.json())
+//     .then((data) => {
+//       console.log(data);
+//       displayPost(data);
+//     })
+//     .catch((err) => console.log(err));
+// };
+const fetchApiUsingAsyncAwaitMethod = async (apiUrl) => {
+  try {
+    const response = await fetch(apiUrl);
+    const data = await response.json();
+    console.log(data);
+    displayPost(data);
+  } catch (error) {
+    postListContainer.innerHTML = `<div class="error">
+    <h3>Error Occured: ${error.message}</h3>
+    </div>`;
+  }
 };
 
 const displayPost = (posts) => {
@@ -30,4 +54,8 @@ const displayPost = (posts) => {
     })
     .join(" ");
 };
-fetchApiUsingXHR(apiUrl);
+
+fetchApiUsingAsyncAwaitMethod(apiUrl);
+
+// fetchApiUsingFetchMethod(apiUrl);
+// fetchApiUsingXHR(apiUrl);
