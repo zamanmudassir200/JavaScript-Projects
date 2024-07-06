@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+section {
+  height: 600px;
+}
+h1 {
+  text-align: center;
+  padding: 15px 0;
+  font-size: 30px;
+}
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 25rem;
+  max-width: 45rem;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.slide {
+  position: absolute;
+  top: 0;
+  height: 25rem;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  display: flex;
+}
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.prev {
+  position: absolute;
+  top: 230px;
+  left: 40px;
+  z-index: 100;
+}
+.next {
+  position: absolute;
+  right: 40px;
+  top: 230px;
+  z-index: 100;
+}
+.prev button,
+.next button {
+  padding: 10px 20px;
+  font-weight: 700;
+  border-radius: 14px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.prev button:hover,
+.next button:hover {
+  background-color: aqua;
+}
+.dots-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: absolute;
+  left: 45%;
+  bottom: 30%;
+}
+.dots-container .dot {
+  width: 30px;
+  height: 10px;
+  border-radius: 8px;
+
+  background-color: black;
+  cursor: pointer;
+}
+.dots-container .dot.active {
+  background-color: red;
+}
