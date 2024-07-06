@@ -4,7 +4,7 @@ let currentStep = 0;
 const fetchProducts = async (getCurrentStep) => {
   try {
     const response = await fetch(
-      `https://dummyjson.com/products?limit=50&skip=${
+      `https://dummyjson.com/products?limit=100&skip=${
         getCurrentStep === 0 ? 0 : getCurrentStep * 10
       }`,
       {
@@ -41,8 +41,9 @@ const displayListOfProducts = (getListOfProducts) => {
     loadMoreContainer.appendChild(productListsWrapper);
   });
   console.log(loadMoreContainer.children.length);
-  if (loadMoreContainer.children.length == 288) {
+  if (loadMoreContainer.children.length >= 400) {
     loadMoreBtn.setAttribute("disabled", true);
+    loadMoreBtn.style.cursor = "not-allowed";
   }
 };
 fetchProducts(currentStep);
