@@ -13,7 +13,6 @@ const handleUpdateRatingState = (getCurrentRatingValue) => {
 };
 const handleMouseOver = (event) => {
   const currentRatingValue = event.target.dataset.rating;
-  console.log(currentRatingValue);
   if (!currentRatingValue) return;
   else {
     handleUpdateRatingState(currentRatingValue);
