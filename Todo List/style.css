@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+main {
+  padding: 0 20px;
+}
+.container {
+  display: flex;
+  min-height: 600px;
+  align-items: center;
+  max-width: 1200px;
+  flex-direction: column;
+  margin: 0 auto;
+  justify-content: start;
+  border: 1px solid black;
+  padding-top: 12px;
+  border-radius: 14px;
+}
+main h1 {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.todo-list-container input {
+  padding: 12px 10px;
+  font-size: 17px;
+
+  border: none;
+  border-bottom: 1px solid black;
+  outline: none;
+}
+.todo-list-container button {
+  padding: 12px 15px;
+  font-size: 17px;
+  border-radius: 18px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: green;
+  color: white;
+}
+.todo-lists {
+  background-color: rgb(80, 150, 80);
+  border: 1px solid blue;
+  padding: 12px 10px;
+  width: 80%;
+
+  border-radius: 10px;
+  color: white;
+  font-size: 23px;
+  margin: 20px 0;
+}
+.todo-lists h3 {
+  text-align: center;
+}
+
+.ul-todo {
+  /* background-color: rgb(129, 163, 152); */
+  padding: 13px 10px;
+  margin-top: 10px;
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.ul-todo li {
+  display: flex;
+  align-items: center;
+  text-align: justify;
+  justify-content: space-between;
+  width: 100%;
+  padding: 12px 10px;
+  border-radius: 12px;
+  gap: 10px;
+  flex-wrap: wrap;
+  border: 1px solid whitesmoke;
+  list-style: none;
+  color: white;
+}
+.ul-todo li span {
+  font-size: 16px;
+}
+.btn-div {
+  border: 1px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.todo-div {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  gap: 10px;
+  width: 60%;
+  border: 1px solid red;
+  padding: 10px;
+}
+.ul-todo li button {
+  padding: 10px 20px;
+  border-radius: 7px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: rgb(20, 236, 20);
+  color: white;
+}
+
+@media (max-width: 715px) {
+  .ul-todo li {
+    flex-direction: column;
+  }
+  .ul-todo li .todo-div {
+    width: 100%;
+  }
+}
