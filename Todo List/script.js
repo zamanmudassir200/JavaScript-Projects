@@ -71,10 +71,15 @@ const displayTodos = () => {
         }
       });
     });
-  } else {
-    let h3 = document.createElement("h3");
-    h3.innerText = "No list available";
-    h3.style.color = "#850000";
-    ulTodo.append(h3);
+  }
+  {
+    (() => {
+      if (todos.length === 0) {
+        let h3 = document.createElement("h3");
+        h3.innerText = "No list available";
+        h3.style.color = "#850000";
+        ulTodo.append(h3);
+      }
+    })();
   }
 };
