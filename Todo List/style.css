@@ -23,10 +23,18 @@ main h1 {
   text-align: center;
   padding: 10px 0;
 }
+.todo-list-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .todo-list-container input {
-  padding: 12px 10px;
+  padding: 10px 10px;
   font-size: 17px;
+
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
 
   border: none;
   border-bottom: 1px solid black;
@@ -35,7 +43,7 @@ main h1 {
 .todo-list-container button {
   padding: 12px 15px;
   font-size: 17px;
-  border-radius: 18px;
+  /* border-radius: 18px; */
   border: none;
   outline: none;
   cursor: pointer;
@@ -88,7 +96,6 @@ main h1 {
   font-size: 16px;
 }
 .btn-div {
-  border: 1px solid red;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -99,9 +106,14 @@ main h1 {
   align-items: center;
   justify-items: center;
   gap: 10px;
-  width: 60%;
+  width: 70%;
   border: 1px solid red;
   padding: 10px;
+}
+.todo-div span {
+  word-break: break-all;
+  line-height: 20px;
+  text-align: justify;
 }
 .ul-todo li button {
   padding: 10px 20px;
@@ -112,8 +124,22 @@ main h1 {
   background-color: rgb(20, 236, 20);
   color: white;
 }
+@media (max-width: 360px) {
+  form {
+    border: 1px solid black;
+    display: flex;
+    border-radius: 12px;
 
-@media (max-width: 715px) {
+    flex-direction: column;
+  }
+  form button {
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 790px) {
   .ul-todo li {
     flex-direction: column;
   }
