@@ -26,5 +26,6 @@ copyIcon.addEventListener("click", () => {
   //   inputField.select();
   navigator.clipboard.writeText(inputField.value);
   alert("Copied to clipboard");
+
   //   document.execCommand("copy");
 });
