@@ -11,10 +11,11 @@ body {
   align-items: center;
   justify-content: start;
   background-color: rgb(44, 1, 44);
+  padding: 0 10px;
 }
 .container {
   width: 850px;
-  border: 1px solid white;
+
   padding-left: 100px;
 }
 .password-container {
@@ -63,13 +64,47 @@ body {
   border-radius: 5px;
   border: none;
   outline: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
   cursor: pointer;
   gap: 10px;
   align-self: self-start;
   background-color: greenyellow;
   /* color: white; */
   font-weight: bolder;
+}
+#generate-password i {
+  margin-right: 10px;
+}
+
+@media (max-width: 790px) {
+  .container {
+    padding-left: 10px;
+  }
+  .password-container h1 {
+    font-size: 40px;
+    color: white;
+    margin-bottom: 10px;
+  }
+  .password-container span {
+    color: green;
+    border-bottom: 5px solid green;
+    padding-bottom: 10px;
+    font-size: 40px;
+  }
+  #generate-password {
+    font-size: 20px;
+  }
+}
+@media (max-width: 390px) {
+  .password-container h1 {
+    font-size: 25px;
+    color: white;
+    margin-bottom: 10px;
+  }
+  .password-container span {
+    color: green;
+    border-bottom: 5px solid green;
+    padding-bottom: 10px;
+    font-size: 25px;
+  }
 }
