@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  background-color: rgb(44, 1, 44);
+}
+.container {
+  width: 850px;
+  border: 1px solid white;
+  padding-left: 100px;
+}
+.password-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 25px;
+}
+.password-container h1 {
+  font-size: 56px;
+  color: white;
+  margin-bottom: 10px;
+}
+.password-container span {
+  color: green;
+  border-bottom: 5px solid green;
+  padding-bottom: 10px;
+  font-size: 56px;
+}
+.input-container {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 16px;
+  min-width: 90%;
+  border-radius: 4px;
+}
+.input-container input {
+  width: 100%;
+  padding: 12px 10px;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+.input-container i {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+#generate-password {
+  padding: 14px 20px;
+  font-size: 26px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  gap: 10px;
+  align-self: self-start;
+  background-color: greenyellow;
+  /* color: white; */
+  font-weight: bolder;
+}
