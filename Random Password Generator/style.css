@@ -76,7 +76,7 @@ body {
   margin-right: 10px;
 }
 
-@media (max-width: 790px) {
+@media (max-width: 860px) {
   .container {
     padding-left: 10px;
   }
