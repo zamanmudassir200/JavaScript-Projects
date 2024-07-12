@@ -9,6 +9,7 @@ let btnTextArr = [
   "/",
   "-",
   "0",
+  ".",
   "+",
   "1",
   "2",
@@ -32,9 +33,23 @@ btnTextArr.forEach((text) => {
     console.log(btnText);
 
     console.log(inputField.value);
-    calculate.addEventListener("click", () => {
-      inputField.value = eval(inputField.value);
-    });
   });
 });
-inputField.value = "";
+calculate.addEventListener("click", () => {
+  if (inputField.value.trim() === "") {
+    alert("please enter some value");
+  } else {
+    try {
+      inputField.value = eval(inputField.value);
+    } catch (e) {
+      alert("Invalid expression");
+    }
+  }
+});
+AC.addEventListener("click", () => {
+  inputField.value = "";
+});
+
+del.addEventListener("click", () => {
+  inputField.value = inputField.value.slice(0, -1);
+});
