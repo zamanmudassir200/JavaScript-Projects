@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+body {
+  padding: 0 20px;
+  padding-top: 40px;
+  background-color: rgb(95, 95, 179);
+}
+.container {
+  max-width: 1400px;
+  padding: 12px 30px;
+  min-height: calc(100vh - 40px);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 15px;
+}
+.container h1 {
+  font-size: 60px;
+  font-weight: bolder;
+}
+.container span {
+  font-size: 60px;
+  font-weight: bolder;
+  color: greenyellow;
+}
+.age-container {
+  background-color: rgba(255, 255, 255, 0.226);
+  padding: 35px;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  gap: 40px;
+  /* max-width: ; */
+}
+.age-container input {
+  padding: 20px 40px;
+  border: none;
+  flex: 1;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 20px;
+  position: relative;
+}
+
+.age-container button {
+  padding: 20px 12px;
+  font-size: 20px;
+  border-radius: 20px;
+  background-color: greenyellow;
+  /* color: white; */
+  border: none;
+  cursor: pointer;
+}
+
+.display-age {
+  font-size: 22px;
+  font-weight: 600;
+  margin-top: 10px;
+}
