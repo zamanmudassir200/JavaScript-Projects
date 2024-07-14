@@ -89,3 +89,21 @@ body {
     width: 0;
   }
 }
+
+@media (max-width: 490px) {
+  .btns {
+    margin: 10px;
+  }
+  .toast {
+    width: 300px;
+  }
+}
+
+@media (max-width: 360px) {
+  .btns {
+    margin: 10px;
+  }
+  .toast {
+    width: 250px;
+  }
+}
