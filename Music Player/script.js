@@ -21,7 +21,7 @@ const playPause = () => {
 if (song.play()) {
   setInterval(() => {
     progress.value = song.currentTime;
-  }, 1000);
+  }, 2000);
 }
 
 progress.onchange = function () {
