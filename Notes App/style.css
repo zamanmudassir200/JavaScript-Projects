@@ -83,3 +83,16 @@ body {
   font-size: 30px;
   color: red;
 }
+
+@media (max-width: 890px) {
+  .notes-container {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .note-btn-container {
+    margin-top: 20px;
+    text-align: center;
+  }
+}

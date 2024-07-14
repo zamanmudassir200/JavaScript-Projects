@@ -6,7 +6,7 @@ const saveNotes = () => {
   const noteElements = notesContainer.querySelectorAll(".note");
   noteElements.forEach((noteElement) => {
     const textArea = noteElement.querySelector("textarea");
-    notes.push(textArea.value);
+    notes.unshift(textArea.value);
   });
   window.localStorage.setItem("notes", JSON.stringify(notes));
 };
@@ -23,7 +23,7 @@ const createNoteElement = (content = "") => {
   textArea.value = content;
 
   noteDiv.append(crossIcon, textArea);
-  notesContainer.appendChild(noteDiv);
+  notesContainer.prepend(noteDiv);
 
   // Add event listeners
   crossIcon.addEventListener("click", () => {
