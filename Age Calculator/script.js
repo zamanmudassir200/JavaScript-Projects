@@ -40,7 +40,6 @@ calculateAge.addEventListener("click", () => {
   const millisecnd = date.getTime();
   const todaysDate = Date.now();
   const finalDate = todaysDate - millisecnd;
-  ageInput.max = new Date().toISOString().split("T")[0];
   if (ageInput.value === "") {
     displayAge.innerText = `Please select your date of birth`;
   } else if (finalDate > 0) {
