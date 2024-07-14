@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  background-color: antiquewhite;
+  padding: 0 20px;
+}
+.container {
+  max-width: 1300px;
+  height: 100vh;
+  margin: 0 auto;
+}
+.quote-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 20px;
+  transform: translate(-50%, -50%);
+  box-shadow: 2px 3px 10px black;
+  border-radius: 10px;
+  text-align: center;
+  background-color: white;
+  min-width: 70%;
+}
+.quote-box h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  position: relative;
+}
+.quote-box h2::after {
+  content: "";
+  width: 75px;
+  height: 4px;
+  position: absolute;
+  background-color: blue;
+  bottom: -10px;
+  border-radius: 3px;
+  transform: translateX(-50%);
+  left: 50%;
+}
+.quote-box blockquote {
+  font-size: 26px;
+  min-height: 110px;
+}
+.quote-box blockquote::before,
+.quote-box blockquote::after {
+  content: '"';
+}
+
+.quote-box span {
+  display: block;
+  float: right;
+  margin-top: 10px;
+  position: relative;
+  font-weight: 800;
+}
+
+.quote-box span::before {
+  content: "";
+  width: 20px;
+  border-radius: 10px;
+  height: 2px;
+  background-color: blue;
+  position: absolute;
+  top: 50%;
+  left: -30px;
+}
+
+.quote-box .btns {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.quote-box .btns button {
+  padding: 10px 20px;
+  color: white;
+  background-color: rgb(23, 147, 230);
+  font-size: 18px;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid blue;
+}
+
+.quote-box button:nth-child(2) {
+  background-color: white;
+  color: black;
+}
+.quote-box button:nth-child(2):hover {
+  background-color: rgb(23, 147, 230);
+  color: white;
+}
+.quote-box button:nth-child(1):hover {
+  background-color: white;
+  color: black;
+  border: 1px solid blue;
+}
