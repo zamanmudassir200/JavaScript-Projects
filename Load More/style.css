@@ -51,12 +51,12 @@ header {
   cursor: pointer;
   font-weight: 800;
 }
-.loadMoreBtn:hover {
+.loadMoreBtn:not(:disabled):hover {
   background-color: rgb(168, 90, 168);
-
   color: black;
   transition: background 0.3s ease-in-out;
 }
+
 .btn {
   display: flex;
   align-items: center;
