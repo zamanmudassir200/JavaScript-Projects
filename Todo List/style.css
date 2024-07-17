@@ -35,7 +35,6 @@ main h1 {
 
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
-
   border: none;
   border-bottom: 1px solid black;
   outline: none;
@@ -43,7 +42,6 @@ main h1 {
 .todo-list-container button {
   padding: 12px 15px;
   font-size: 17px;
-  /* border-radius: 18px; */
   border: none;
   outline: none;
   cursor: pointer;
@@ -52,10 +50,8 @@ main h1 {
 }
 .todo-lists {
   background-color: rgb(80, 150, 80);
-  border: 1px solid blue;
   padding: 12px 10px;
   width: 80%;
-
   border-radius: 10px;
   color: white;
   font-size: 23px;
@@ -107,7 +103,6 @@ main h1 {
   justify-items: center;
   gap: 10px;
   width: 70%;
-  border: 1px solid red;
   padding: 10px;
 }
 .todo-div span {
