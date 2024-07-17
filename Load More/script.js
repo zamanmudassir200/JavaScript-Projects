@@ -40,7 +40,6 @@ const displayListOfProducts = (getListOfProducts) => {
     productListsWrapper.appendChild(productPrice);
     loadMoreContainer.appendChild(productListsWrapper);
   });
-  console.log(loadMoreContainer.children.length);
   if (loadMoreContainer.children.length >= 400) {
     loadMoreBtn.setAttribute("disabled", true);
     loadMoreBtn.style.cursor = "not-allowed";
